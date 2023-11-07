@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4503a5c233.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p> UI/UX Desighner</p>
+                <h1>Hi, I'm <span>Mohammed Salihat Mukhtar </span> <br>from Nigeria</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me.png" height="500px" width="450px">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I'm a UI/UX designer named Muhammed Salihat Mukhtar. I'm incredibly passionate about making intuitive digital experiences. I concentrate on creating ideas that are both aesthetically pleasing and practical.
+
+                        I have experience in UI design and have worked on initiatives such as website design and webapp design where I gained knowledge of the value of collaboration and precision.
+                        
+                        To make ideas come to reality, I employ tools like figma, canva. 
+                        
+                        Please feel free to get in touch with me at mukhtarsaliha@gmail.com </p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span> UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span> Web Development</span><br>Web App Development</li>
+                            <li><span> App Development</span><br>Building Andriod App</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span> 2022</span><br>UI/UX design Training at Geek Code Planet</li>
+                            <li><span> 2021/2022</span><br>Web App Development courses at Nile University of Nigeria
+                            </li>
+                            <li><span> 2022</span><br>Building Andriod App at Nile University of Nigeria</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span> 2020</span><br>Development Basis at Nile University of Nigeria</li>
+                            <li><span> 2022</span><br>UI/UX design Training at Geek Code Planet</li>
+                            <li><span> 2022</span><br>Building Andriod App at Nile University of Nigeria</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I improve content integration, cross-browser compatibility, and search engine visibility. I provide safe e-commerce solutions with simple content management for customers that are interested. I involve you in the design process at every level and guarantee a smooth launch with our thorough testing and quality assurance. To discuss your idea and transform your online presence, get in touch. </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I specialize in designing user interfaces that are functionally focused and aesthetically pleasing. To achieve the highest level of user engagement, I take a user-centered approach and conduct in-depth research and testing. From wireframing to prototype, I collaborate with you to realize your idea. </p>
+                        
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>With the help of my web app development services, you can turn your ideas into effective web applications. I specialize in developing unique, streamlined solutions, from data-driven apps and e-commerce platforms to interactive platforms. </p>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Screenshot (45).png">
+                </div>
+                <div class="work">
+                    <img src="images/Screenshot (43).png">
+                </div>
+                <div class="work">
+                    <img src="images/Screenshot (44).png">
+                </div>
+                <button><a href="portfolio.html">View more</a></button> 
+            </div>
+        </div>
+    </div>
+   
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+</body>
+
+</html>
